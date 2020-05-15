@@ -6,7 +6,7 @@ public class AnimalRepositoryTests
 {
     [Theory]
     [MemberData(nameof(GetFindAnimalData))]
-    public void FindAnimalsReturnCorrectResult(SearchCriteria searchCriteria, string expectedResult)
+    public void FindReturnsCorrectResult(SearchCriteria searchCriteria, string expectedResult)
     {
         var repository = new AnimalRepository();
 

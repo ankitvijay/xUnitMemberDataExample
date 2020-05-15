@@ -8,7 +8,7 @@ public class AnimalRepositoryTests
 {
     [Theory]
     [MemberData(nameof(GetFindAnimalData))]
-    public void FindAnimalsReturnCorrectResult(AnimalRepositoryTestSource testData)
+    public void FindReturnsCorrectResult(AnimalRepositoryTestSource testData)
     {
         var repository = new AnimalRepository();
 
